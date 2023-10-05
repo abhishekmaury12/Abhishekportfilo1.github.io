@@ -108,7 +108,7 @@
         height: 93px;
         width: 1px;
         background-color: white;
-        margin: 0 100px;
+        margin: 0 6vw;
       }
       .image-top {
         width: 23px;
@@ -147,18 +147,58 @@
         color: gray;
         padding: 12px 0;
       }
-      @media only screen and (max-width: 1192px) {
-        nav {
-          flex-direction: column;
+   @media screen and (max-width: 1450px) {
+         
+          
+          .box{
+            flex-direction: column;
+          }
+          .vertical-title,.vertical-desc{
+            left: 45px;
+          }
+          .secoundSection{
+            height: 161vh;
+          }
+          .secoundSection .box{
+                    width: 50vw;
+          }
+          .secoundSection .vertical{
+            height: unset;
+          }
+          nav{
+            flex-direction: column;
+          }
+          .firstSection{
+            flex-direction: column-reverse;
+          }
+          .leftSection{
+            width: 100% !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+          .rightSection{
+            width: 721px !important;
+            display: flex;
+            justify-content: center;
+          }
+          .rightSection img{
+            width: 45vw;
+            margin-bottom: 73px;
+          }
+          .image-top{
+            top: 133px;
+          }
+          .secoundSection{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          body{
+            min-width: fit-content;
+          }
         }
-        .rightSection {
-          width: 53%;
-        }
-        .rightSection img {
-          width: 80%;
-          margin: 48px 50px;
-        }
-      }
     </style>
   </head>
   <body>
